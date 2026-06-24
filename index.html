@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComicTracker</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Fontes do Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+<body>
+    <header id="barra_principal_pesquisa">
+        <div class="posicao_da_barra"> 
+            <div id="logo">
+                <h1 id="titulo-site">Comic <span class="texto-tracker">Track</span></h1>
+            </div>
+            <div class="div_pesquisa">
+                <div class="barra-da-pesquisa">
+                    <input type="search" placeholder="Pesquisar uma HQ">
+                </div>
+                <!--Botão de pesquisa fica invisível, até você clicar barra de pesquisa-->
+                <button class="btn-pesquisa" aria-label="Pesquisar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icone-bussola">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                    </svg>
+
+                </button> 
+
+                <!--Botão de opções-->
+                <button class="menu-opcs">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                    </svg>
+                </button>
+                <!--
+                <div class="expand-menu">
+                    <button>OPCS</button>
+                    <ul class="opcsmenu">
+                        <li class="opc1">Home</li>
+                        <li class="opc2">Search</li>
+                        <li class="opc3">Discover</li>
+                        <li class="opc4">Runs</li>
+                        <li class="opc5">Community</li>
+                    </ul>
+                </div>
+                -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="conteudo-principal">
+            <div class="lendo">
+                <p>quadrinhos</p>
+            </div>
+            
+            <div class="populares">
+                <p>quadrinhos</p>
+            </div>
+        </div>
+
+        <aside class="novidades">
+                <p>novidades</p>
+            </aside>
+
+    </main>
+
+   
+
+
+    <script src="Javinha.js"></script>  
+</body>
+</html>
