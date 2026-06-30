@@ -1,6 +1,25 @@
 
 /* --- ESTILO PARA CELULAR (PADRÃO) --- */
-header{
+@font-face {
+    font-family: Konkhmer Sleokchher;
+    src: url(Assets/Font/konkhmer-sleokchher/KonkhmerSleokchher-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    font-family: initial;
+}
+
+h1, h2, h3{
+    margin: 0;
+    padding: 0;
+    font-family: Konkhmer Sleokchher;
+}
+
+#barra_de_baixo{
     position: fixed;
     justify-content: center;
     bottom: 0;
@@ -20,7 +39,13 @@ header{
 html, body {
   width: 100%;
   max-width: 100%;
-  background-color: #2b3348;
+  background: 
+    linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.08) 0%,
+            rgba(0, 0, 0, 0.30) 100%
+        ),
+        #0F1133;
   box-sizing: content-box;
   overflow-x: hidden; /* Corta qualquer conteúdo que tente vazar para a direita */
   margin: 0;
@@ -28,13 +53,115 @@ html, body {
   -moz-osx-font-smoothing: grayscale;  /* Para Firefox no Mac */
 }
 
-main{
-    display: block;
-    flex-direction: column;
-    background-color: coral;
-    outline: 5px solid yellow;  
-    margin: 60px 20px 30px 20px; /* ALTERADO: Aumentamos a margem superior (60px) */
+/* ------------------------------------------ 
+    O conteúdo principal da página (MAIN) 
+    -----------------------------------------
+*/
+
+/* ========================================
+   MAIN
+   ======================================== */
+main {
+    /*background-color: #0F1133;*/
+    padding: 10px 0;
+    margin: 75px 16px 76px;
     height: 100vh;
+}
+
+
+/* ========================================
+   CABEÇALHO DE SEÇÃO (Título + Ver Mais)
+   ======================================== */
+.titulo-vermais {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    font-size: 0.75rem;
+}
+
+.titulo-vermais .ver-mais {
+    color: #8E94E8;
+    font-size: 0.875rem;
+}
+
+
+/* ========================================
+   SEÇÃO: CONTINUAR LENDO
+   ======================================== */
+#list-lendo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.hqs-lendo {
+    display: flex;
+    gap: 11px;
+}
+
+
+/* ========================================
+   CARD DE HQ
+   ======================================== */
+.homemaranha,
+.Spawn,
+.Hellblazer {
+    display: flex;
+    flex-direction: column;
+    max-width: 113px;
+}
+
+.hqs-lendo > span > img {
+    width: 113px;
+    height: 174px;
+    object-fit: cover;
+}
+
+.homemaranha h3,
+.Spawn h3,
+.Hellblazer h3 {
+    flex: 1;
+    margin: 0;
+    color: #ffffff;
+    font-family: Konkhmer Sleokchher;
+    font-size: 0.813rem;
+    font-style: normal;
+    text-align: center;
+    word-break: break-word;
+}
+
+
+/* ========================================
+   BARRA DE PROGRESSO
+   ======================================== */
+.prog-hq {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: auto;
+    width: 100%;
+}
+
+#barra-progresso {
+    flex: 1;
+    height: 5px;
+    background-color: #D9D9D9;
+    border-radius: 25px;
+}
+
+.progresso-feito {
+    height: 5px;
+    background: linear-gradient(to right, #464B69, #9297CE);
+    border-radius: 25px;
+}
+
+.prog-hq p {
+    margin: 0;
+    font-family: Inter;
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: #ffffff;
 }
 
 /*NavBar de baixo */
@@ -77,7 +204,7 @@ header > .posicao_da_barra{
 }
 
 
-/*Navbar de baixo*/
+/* --- Navbar de baixo ---*/
 #barra_de_cima{
     display: flex;
     flex-direction: row;
@@ -88,62 +215,87 @@ header > .posicao_da_barra{
 
 
 
-/*Classe do Main*/
 
-.lendo{
-    background-color: #636f91;
-    outline: solid 1px rgb(55, 0, 255);
-    min-height: 250px;
+
+/* --- Barra do topo do site ---*/
+
+#barra_de_cima{
+    background-color: #1A1C36;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-.populares{
-    color: white;
-    background-color: #0f0f0f;
-    outline: solid 1px red;
-    min-height: 250px;
-}
+.icons_diversos{
+    display: flex;
+    flex-direction: row;
+}   
 
-.novidades{
-    margin: 10px;
-    background-color: darkkhaki;
-    outline: solid 1px red;
-    max-height: fit-content;
-}
-
-
-/*Seção da parte do Titulo: Comic Track */
-#logo{
-    width: 10rem;
-    white-space: nowrap;
-}
-
-#titulo-site{
-    margin: 0;
-    font-size: 20px;
-    font-family: 'inter', sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-    word-spacing: -2px;
-    color: #e8e8e8
-}
-
-.texto-tracker{
-    color: #2a3347
-}
-
-
-/*Classe das Barra principal site*/
-.posicao_da_barra{
+/* LOGO COMIC TRACK */
+#barra_de_cima > #logo{
     display: flex;
     align-items: center;
-    max-width: auto;
-    height: auto;
-    width: 100%;
-    padding: 0px 10px; /* Adicione um padding lateral para criar uma folga nas bordas da tela */
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho total da barra */
-    margin: 0 auto;
+   color: #ffffff;
+   flex: 1;
+   width: auto;
+   height: auto;
+   font-size: 1.25rem;
+   font-family: Konkhmer Sleokchher;
 }
 
+#barra_de_cima > #logo > span{
+   color: #8E94E8;
+   margin-left: 3PX;
+}
+
+
+/* ------------------------------- */
+
+.icons_diversos{
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinha os ícones verticalmente */
+    gap: 15px;           /* Cria um espaço limpo entre cada ícone */
+    height: auto;
+}
+
+
+.icons_diversos > .perfil ,
+.icons_diversos > .sino,
+.icons_diversos > .busca
+{
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.icons_diversos > .perfil > button,
+.icons_diversos > .sino > button,
+.icons_diversos > .busca > button
+{
+    background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    color: white;
+}
+
+.icons_diversos > .perfil > button > img,
+.icons_diversos > .sino > button > img,
+.icons_diversos > .busca > button > img
+{
+   width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
 
 
 /*Estilo para Desktop (A partir de 768px)*/
