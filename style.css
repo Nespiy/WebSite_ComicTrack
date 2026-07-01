@@ -42,7 +42,7 @@ html, body {
   background: 
     linear-gradient(
             to bottom,
-            rgba(255, 255, 255, 0.08) 0%,
+            rgba(255, 255, 255, 0.08) 50%,
             rgba(0, 0, 0, 0.30) 100%
         ),
         #0F1133;
@@ -62,10 +62,13 @@ html, body {
    MAIN
    ======================================== */
 main {
-    /*background-color: #0F1133;*/
+    display: flex;
+    flex-direction: column;
+    outline: 1px solid white;
     padding: 10px 0;
     margin: 75px 16px 76px;
     height: 100vh;
+    gap: 15px;
 }
 
 
@@ -93,6 +96,8 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .hqs-lendo {
@@ -203,6 +208,83 @@ header > .posicao_da_barra{
     font-size: smaller;
 }
 
+/* 
+================================================
+    [ Seção Pagina Main: Populares da Semana ]
+===============================================
+*/
+
+#list-populares{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    gap: 12px;
+}
+
+.em-alta-semana
+{
+    font-size: 1rem;
+}
+
+.flex-hq-popular{
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+}
+
+.popular1, .popular2, .popular3{
+    background-color: #0F1133;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: white solid 0.5px;
+    max-width: 113px;
+    position: relative;
+}
+
+
+.flex-hq-popular > span > img {
+    width: 113px;
+    height: 113px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 5px;
+}
+
+.popular1 > h3,
+.popular2 > h3,
+.popular3 > h3{
+    font-family: Inter;
+    color: white;
+    font-size: 0.5rem;
+    text-align: center;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    max-width: 113px;
+}
+
+.posicao-na-semana{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6773F9;
+    position: absolute;
+    top: 5px;  /* distância do topo do card */
+    left: 3px; /* distância da esquerda do card */
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.posicao-na-semana > h3
+{
+    font-size: 0.875rem;
+    line-height: 0.8;
+    color: white;
+}
+
+
+
 
 /* --- Navbar de baixo ---*/
 #barra_de_cima{
@@ -212,10 +294,6 @@ header > .posicao_da_barra{
     top: 0;
     background-color: #2b3348;
 }
-
-
-
-
 
 /* --- Barra do topo do site ---*/
 
@@ -252,9 +330,6 @@ header > .posicao_da_barra{
    color: #8E94E8;
    margin-left: 3PX;
 }
-
-
-/* ------------------------------- */
 
 .icons_diversos{
     display: flex;
