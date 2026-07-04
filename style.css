@@ -64,10 +64,10 @@ html, body {
 main {
     display: flex;
     flex-direction: column;
-    outline: 1px solid white;
+    /*outline: 1px solid white;*/
     padding: 10px 0;
     margin: 75px 16px 76px;
-    height: 100vh;
+    min-height: 100vh;
     gap: 15px;
 }
 
@@ -282,6 +282,139 @@ header > .posicao_da_barra{
     line-height: 0.8;
     color: white;
 }
+
+/* 
+================================================
+    [ Seção Pagina Main: DESCOBRIR ]
+===============================================
+*/
+
+#list-descobrir{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+.quadrinhos-filtrados{
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+}
+
+.filtrado1, .filtrado2, .filtrado3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #464B69;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+}
+
+#btn-escolhido{
+    background-color: #6773F9;
+}
+
+.botoes-filtro{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+.botoes-filtro button{
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.20);
+    padding: 0px 15px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    font-family: "Inter";
+    font-weight: 400;
+}
+
+
+.card-info h3 {
+    margin: 0;
+    color: #D9D9D9;
+    font-size: 0.75rem; /* Ajustado: 0.531rem estava ficando pequeno demais para ler */
+    font-weight: 600;
+}
+
+.quadrinhos-filtrados .filtrado1 img, 
+.quadrinhos-filtrados .filtrado2 img, 
+.quadrinhos-filtrados .filtrado3 img {
+    object-fit: cover;
+    width: 113px;
+    height: 170px;
+    object-position: top;
+    display: block;
+}
+
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 6px; /* Aumentado levemente para respirar melhor */
+}
+
+.card-info p.genero {
+    margin: 2px 0 0 0;
+    font-size: 0.625rem; /* Ajustado para manter hierarquia visual */
+    color: #A4A4A4;
+    font-family: "Inter";
+}
+
+.avaliacoes > h3 {
+    margin: 0;
+    font-size: 0.688rem; /* Ajustado para combinar com o tamanho do card */
+    color: white;
+    line-height: 1;
+}
+
+.avaliacoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    padding: 0 6px 6px 6px; /* Padding interno inferior para alinhar no card */
+}
+
+.avaliacoes svg {
+    display: flex; /* ou inline-flex */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    width: 16px;  /* Reduzido um pouco para harmonizar com o tamanho do card */
+    height: 16px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 110);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
