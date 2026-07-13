@@ -1,0 +1,303 @@
+/* ========================================
+   FONTE CUSTOMIZADA
+   ======================================== */
+@font-face {
+    font-family: 'Konkhmer Sleokchher';
+    src: url('../Assets/Font/konkhmer-sleokchher/KonkhmerSleokchher-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ========================================
+   VARIÁVEIS GLOBAIS
+   ======================================== */
+:root {
+    /* Cores */
+    --cor-fundo:         #0F1133;
+    --cor-fundo-card:    #464B69;
+    --cor-fundo-navbar:  #1A1C36;
+    --cor-primaria:      #8E94E8;
+    --cor-primaria-dark: #6773F9;
+    --cor-texto:         #ffffff;
+    --cor-texto-suave:   #D9D9D9;
+    --cor-texto-muted:   #A4A4A4;
+    --cor-barra-fundo:   #D9D9D9;
+
+    /* Fontes */
+    --fonte-titulo: 'Konkhmer Sleokchher', sans-serif;
+    --fonte-corpo:  'Inter', sans-serif;
+
+    /* Espaçamentos */
+    --gap-xs:  4px;
+    --gap-sm:  8px;
+    --gap-md:  11px;
+    --gap-lg:  16px;
+    --gap-xl:  24px;
+
+    /* Bordas */
+    --radius-sm: 5px;
+    --radius-md: 10px;
+    --radius-lg: 40px;
+
+    /* Alturas fixas dos navbars */
+    --altura-navbar-topo:  70px;
+    --altura-navbar-baixo: 76px;
+}
+
+
+/* ========================================
+   RESET
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   BASE
+   ======================================== */
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: var(--fonte-corpo);
+    color: var(--cor-texto);
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.08) 50%,
+            rgba(0, 0, 0, 0.30) 100%
+        ),
+        var(--cor-fundo);
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+}
+
+p {
+    font-family: var(--fonte-corpo);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: inherit;
+    font-family: var(--fonte-corpo);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* ========================================
+   COMPONENTE: NAVBAR TOPO
+   ======================================== */
+#barra_de_cima {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    height: var(--altura-navbar-topo);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: var(--cor-fundo-navbar);
+    box-sizing: border-box;
+}
+
+#barra_de_cima #logo {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    color: var(--cor-texto);
+    font-size: 1.25rem;
+    font-family: var(--fonte-titulo);
+}
+
+#barra_de_cima #logo span {
+    color: var(--cor-primaria);
+    margin-left: 3px;
+}
+
+.icons_diversos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons_diversos > div {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.icons_diversos button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    color: var(--cor-texto);
+}
+
+.icons_diversos button img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+
+/* ========================================
+   COMPONENTE: NAVBAR BAIXO
+   ======================================== */
+#barra_de_baixo {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    height: var(--altura-navbar-baixo);
+    padding: 5px;
+    background-color: var(--cor-primaria);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+#barra_de_baixo .posicao_da_barra {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    width: 100%;
+    height: 4rem;
+}
+
+.posicao_da_barra > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.posicao_da_barra button {
+    padding: 0;
+    outline: none;
+}
+
+.posicao_da_barra p {
+    font-size: smaller;
+    font-family: var(--fonte-corpo);
+}
+
+
+/* ========================================
+   COMPONENTE: CABEÇALHO DE SEÇÃO
+   ======================================== */
+.titulo-vermais {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--cor-texto);
+    font-size: 0.75rem;
+}
+
+.titulo-vermais .ver-mais {
+    color: var(--cor-primaria);
+    font-size: 0.875rem;
+}
+
+
+/* ========================================
+   COMPONENTE: BOTÕES DE FILTRO
+   ======================================== */
+.botoes-filtro {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+.botoes-filtro button {
+    border-radius: var(--radius-md);
+    background-color: rgba(255, 255, 255, 0.20);
+    padding: 0 15px;
+    height: 20px;
+    color: var(--cor-texto);
+    text-align: center;
+    font-weight: 400;
+}
+
+#btn-escolhido {
+    background-color: var(--cor-primaria-dark);
+}
+
+
+/* ========================================
+   COMPONENTE: BARRA DE PROGRESSO
+   ======================================== */
+.prog-hq {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: auto;
+    width: 100%;
+}
+
+.barra-progresso {
+    flex: 1;
+    height: 5px;
+    background-color: var(--cor-barra-fundo);
+    border-radius: 25px;
+}
+
+.progresso-feito {
+    height: 5px;
+    background: linear-gradient(to right, #464B69, #9297CE);
+    border-radius: 25px;
+}
+
+.prog-hq p {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: var(--cor-texto);
+}
+
+
+/* ========================================
+   COMPONENTE: AVALIAÇÃO (ESTRELA + NOTA)
+   ======================================== */
+.avaliacoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--gap-xs);
+    padding: 0 6px 6px 6px;
+}
+
+.avaliacoes svg {
+    width: 16px;
+    height: 16px;
+    color: rgb(255, 255, 110);
+    flex-shrink: 0;
+}
+
+.avaliacoes h3 {
+    margin: 0;
+    font-size: 0.688rem;
+    color: var(--cor-texto);
+    line-height: 1;
+}

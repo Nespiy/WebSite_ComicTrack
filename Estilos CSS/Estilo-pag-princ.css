@@ -1,8 +1,8 @@
 
 /* --- ESTILO PARA CELULAR (PADRÃO) --- */
 @font-face {
-    font-family: Konkhmer Sleokchher;
-    src: url(Assets/Font/konkhmer-sleokchher/KonkhmerSleokchher-Regular.ttf);
+    font-family: 'Konkhmer Sleokchher';
+    src: url('../Assets/Font/konkhmer-sleokchher/KonkhmerSleokchher-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -126,13 +126,16 @@ main {
 .homemaranha h3,
 .Spawn h3,
 .Hellblazer h3 {
-    flex: 1;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0; 
     color: #ffffff;
     font-family: Konkhmer Sleokchher;
     font-size: 0.813rem;
     font-style: normal;
     text-align: center;
+    justify-content: center;
+    padding-top: 7px;
     word-break: break-word;
 }
 
