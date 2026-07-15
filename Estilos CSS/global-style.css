@@ -97,6 +97,15 @@ img {
     max-width: 100%;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    /*outline: 1px solid white;*/
+    padding: 10px 0;
+    margin: 75px 16px 76px;
+    min-height: 100vh;
+    gap: 15px;
+}
 
 /* ========================================
    COMPONENTE: NAVBAR TOPO
