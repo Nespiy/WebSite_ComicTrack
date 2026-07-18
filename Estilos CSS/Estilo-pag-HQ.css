@@ -113,8 +113,142 @@
   height: 32px;
 }
 
-.distrib_texto{
-    font-size: 0.875rem;
+.distrib_texto {
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+
+.div_info_dtb_n {
+  display: flex;
+  flex-direction: column;
+}
+
+.distrib_notas {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-top: 15%;
+  align-items: center;
+  gap: 10px;
+}
+
+.grafico-barras {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 10px;
+  gap: 6px;
+  height: 50px; /* altura total do gráfico */
+  width: 100%;
+}
+
+.barra-grupo {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+  height: 100%; /* Mantém os 80px */
+}
+
+.barra-grupo > span {
+  font-size: 0.75rem;
+  text-align: center;
+  white-space: nowrap;
+  color: #ffffff;
+  line-height: 1; /* Garante que não haja sobra de linha fantasma */
+}
+
+.barra {
+  width: 100%;
+  background-color: #464b69;
+  height: 2px;
+}
+
+.qnt-notas span {
+  font-size: 0.75rem;
+}
+
+/*=========================================================================================*/
+/********************************Frame Interativos******************************************/
+/**************************(BOTÕES PRINCPAIS DA PÁGINA)*************************************/
+/*=========================================================================================*/
+
+#FrameInterativo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 12px;
+}
+
+ 
+.botao-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px; /* espaço entre o ícone e o texto */
+    min-height: 55px;
+    background-color: #9ba5fb;
+    width: 100%;
+    padding: 2%;
     box-sizing: border-box;
-    padding-top: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Trbalhar mais tarde neste botão */
+
+
+.botao-principal button{
+  flex: 1;
+}
+
+.botao-principal svg{
+  margin: 0px 10px;
+  transform: scale(1.25);
+  color: #1A1C36;
+  flex-shrink: 0;
+}
+
+.botao-principal h3 {
+  text-shadow: 1px 3px 8px black; /*posição-X ; pos-Y ; grau de desfoque; cor  */
+}
+
+.botao-principal .mais-opcs-btn-principal{
+  transform: scale(0.75);
+}
+
+.Sub-botoes {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 16px;
+}
+
+.Sub-botoes  .btn-favoritar, 
+.Sub-botoes .btn-avaliar{
+  display: inline-flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: #464b69;
+  text-align: center;
+  width: 100%;
+  padding: 2% 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  gap: 5px;
+  border: 0.5px solid;
+}
+.btn-favoritar svg,
+.btn-avaliar svg{
+  transform: scale(0.75);
 }
