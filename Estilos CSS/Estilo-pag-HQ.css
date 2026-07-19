@@ -187,33 +187,31 @@
   gap: 12px;
 }
 
- 
 .botao-principal {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px; /* espaço entre o ícone e o texto */
-    min-height: 55px;
-    background-color: #9ba5fb;
-    width: 100%;
-    padding: 2%;
-    box-sizing: border-box;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px; /* espaço entre o ícone e o texto */
+  min-height: 55px;
+  background-color: #9ba5fb;
+  width: 100%;
+  padding: 2%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
 }
 
 /* Trbalhar mais tarde neste botão */
 
-
-.botao-principal button{
+.botao-principal button {
   flex: 1;
 }
 
-.botao-principal svg{
+.botao-principal svg {
   margin: 0px 10px;
   transform: scale(1.25);
-  color: #1A1C36;
+  color: #1a1c36;
   flex-shrink: 0;
 }
 
@@ -221,7 +219,7 @@
   text-shadow: 1px 3px 8px black; /*posição-X ; pos-Y ; grau de desfoque; cor  */
 }
 
-.botao-principal .mais-opcs-btn-principal{
+.botao-principal .mais-opcs-btn-principal {
   transform: scale(0.75);
 }
 
@@ -233,8 +231,8 @@
   gap: 16px;
 }
 
-.Sub-botoes  .btn-favoritar, 
-.Sub-botoes .btn-avaliar{
+.Sub-botoes .btn-favoritar,
+.Sub-botoes .btn-avaliar {
   display: inline-flex;
   flex: 1;
   justify-content: center;
@@ -249,6 +247,92 @@
   border: 0.5px solid;
 }
 .btn-favoritar svg,
-.btn-avaliar svg{
+.btn-avaliar svg {
   transform: scale(0.75);
+}
+
+/*================================================================*/
+/*================================Div Tags========================*/
+/*================================================================*/
+
+#tags {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  gap: 5px;
+  box-sizing: border-box;
+}
+
+.grupo-tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 8px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.tag {
+  border: 0.5px solid;
+  background-color: #1a1c36;
+  font-family: Konkhmer Sleokchher;
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+
+#sub-tags {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  gap: 8px;
+  box-sizing: border-box;
+}
+
+.grupo-sub-tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 8px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.Stag {
+  display: none;
+  background-color: #c6c6c645;
+  font-family: Konkhmer Sleokchher;
+  padding: 3px 8px;
+}
+
+#aviso-subtag {
+  font-family: inter;
+  font-style: italic;
+  color: #6d6d6d;
+  text-align: center;
+}
+
+
+/*=====================================================*/
+/*==================== DIV SINOPSE ====================*/
+/*=====================================================*/
+
+#sinopse{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.caixa-sinopse {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  padding: 12px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.caixa-btn-sinopse {
+  margin-top: 5px;
+  display: flex;
+  color: #9ba5fb;
+  justify-content: center;
+  text-align: center;
 }
