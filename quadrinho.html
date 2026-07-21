@@ -25,14 +25,278 @@
 
   <div id="overlay" class="overlay"></div>
   <div id="pop-up_estante">
+    <button class="fechar-popup" aria-label="Fechar">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="currentColor"
+          d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
+        />
+      </svg>
+    </button>
     <h2>Adicionar à estante</h2>
     <hr />
     <div class="opcs-escolher">
-      <div class="opc-estante"></div>
-      <div class="opc-estante"></div>
-      <div class="opc-estante"></div>
-      <div class="opc-estante"></div>
-      <div class="opc-estante"></div>
+      <button class="opc-estante">
+        <svg
+          style="color: rgb(48, 255, 179)"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+          <path
+            fill="currentColor"
+            d="M15.5 14V3l3-1v11zm5.5 2.6V4.575q.525.2 1.025.425t.975.55v14.5q-1.175-.975-2.575-1.513T17.5 18q-1.5 0-2.9.525T12 20q-1.2-.95-2.6-1.475T6.5 18q-1.525 0-2.925.538T1 20.05V5.55q1.2-.825 2.613-1.187T6.5 4q1.75 0 3.388.575T13 6.1v10.95q1.05-.5 2.188-.775T17.5 16q.9 0 1.775.15T21 16.6"
+          />
+        </svg>
+        <div class="descr_opcs">
+          <h2>Lendo</h2>
+          <p>Você está lendo quadrinho neste momento.</p>
+        </div>
+        <span class="badge-selecionado">
+          <svg
+            style="color: #9ba5fb"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <!-- Icon from WeUI Icon by WeUI - undefined -->
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m-1.177-7.86l-2.765-2.767L7 12.431l3.119 3.121a1 1 0 0 0 1.414 0l5.952-5.95l-1.062-1.062z"
+            />
+          </svg>
+        </span>
+      </button>
+      <button class="opc-estante">
+        <svg
+          style="color: rgb(64, 204, 246)"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+          <path
+            fill="currentColor"
+            d="M5 21V5q0-.825.588-1.412T7 3h10q.825 0 1.413.588T19 5v16l-7-3z"
+          />
+        </svg>
+        <div class="descr_opcs">
+          <h2>Quero Ler</h2>
+          <p>Ainda não comecei, mas quero ler.</p>
+        </div>
+        <span class="badge-selecionado">
+          <svg
+            style="color: #9ba5fb"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <!-- Icon from WeUI Icon by WeUI - undefined -->
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m-1.177-7.86l-2.765-2.767L7 12.431l3.119 3.121a1 1 0 0 0 1.414 0l5.952-5.95l-1.062-1.062z"
+            />
+          </svg>
+        </span>
+      </button>
+      <button class="opc-estante">
+        <svg
+          style="color: rgb(250, 246, 25)"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+          <path
+            fill="currentColor"
+            d="M9 16h2V8H9zm4 0h2V8h-2zm-1 6q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"
+          />
+        </svg>
+        <div class="descr_opcs">
+          <h2>Pausado</h2>
+          <p>Dei uma pausa na leitura.</p>
+        </div>
+        <span class="badge-selecionado">
+          <svg
+            style="color: #9ba5fb"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <!-- Icon from WeUI Icon by WeUI - undefined -->
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m-1.177-7.86l-2.765-2.767L7 12.431l3.119 3.121a1 1 0 0 0 1.414 0l5.952-5.95l-1.062-1.062z"
+            />
+          </svg>
+        </span>
+      </button>
+      <button class="opc-estante">
+        <svg
+          style="color: rgb(47, 255, 106)"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <!-- Icon from WeUI Icon by WeUI - undefined -->
+          <path
+            fill="currentColor"
+            fill-rule="evenodd"
+            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m-1.177-7.86l-2.765-2.767L7 12.431l3.119 3.121a1 1 0 0 0 1.414 0l5.952-5.95l-1.062-1.062z"
+          />
+        </svg>
+        <div class="descr_opcs">
+          <h2>Concluído</h2>
+          <p>Já li tudo.</p>
+        </div>
+        <span class="badge-selecionado">
+          <svg
+            style="color: #9ba5fb"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <!-- Icon from WeUI Icon by WeUI - undefined -->
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m-1.177-7.86l-2.765-2.767L7 12.431l3.119 3.121a1 1 0 0 0 1.414 0l5.952-5.95l-1.062-1.062z"
+            />
+          </svg>
+        </span>
+      </button>
+      <button class="opc-estante">
+        <svg
+          style="color: rgb(246, 64, 64)"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <!-- Icon from Gridicons by Automattic - https://github.com/Automattic/gridicons/blob/trunk/LICENSE.md -->
+          <path
+            fill="currentColor"
+            d="M19.1 4.9C15.2 1 8.8 1 4.9 4.9S1 15.2 4.9 19.1s10.2 3.9 14.1 0s4-10.3.1-14.2m-4.3 11.3L12 13.4l-2.8 2.8l-1.4-1.4l2.8-2.8l-2.8-2.8l1.4-1.4l2.8 2.8l2.8-2.8l1.4 1.4l-2.8 2.8l2.8 2.8z"
+          />
+        </svg>
+        <div class="descr_opcs">
+          <h2>Abandonado</h2>
+          <p>Desisti de ler.</p>
+        </div>
+        <span class="badge-selecionado">
+          <svg
+            style="color: #9ba5fb"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <!-- Icon from WeUI Icon by WeUI - undefined -->
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m-1.177-7.86l-2.765-2.767L7 12.431l3.119 3.121a1 1 0 0 0 1.414 0l5.952-5.95l-1.062-1.062z"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+    <hr />
+    <h3>Outras ações</h3>
+    <div class="otr_opcs">
+      <button class="otr_opc_escolher">
+        <svg
+          style="color: yellow"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <!-- Icon from Material Symbols Light by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+          <path
+            fill="currentColor"
+            d="m8.125 7.092l2.608-3.47q.238-.322.566-.472T12 3t.701.15t.566.471l2.608 3.471l4.02 1.368q.534.18.822.605q.289.426.289.94q0 .237-.07.471t-.228.449l-2.635 3.573l.1 3.83q.025.706-.466 1.189T16.564 20l-.454-.056L12 18.733l-4.11 1.211q-.124.05-.24.053q-.117.003-.214.003q-.665 0-1.15-.483t-.459-1.188l.1-3.856l-2.629-3.548q-.159-.217-.229-.453Q3 10.236 3 10q0-.506.297-.942q.296-.435.828-.618z"
+          />
+        </svg>
+        <div class="descr_opcs">
+          <h2>Avaliar agora</h2>
+          <p>Dê uma nota para este quadrinho.</p>
+        </div>
+      </button>
+      <button class="otr_opc_escolher">
+        <svg
+          style="color: white"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+          <path
+            fill="currentColor"
+            d="M5 19h1.425L16.2 9.225L14.775 7.8L5 17.575zm-2 2v-4.25L17.625 2.175L21.8 6.45L7.25 21zM19 6.4L17.6 5zm-3.525 2.125l-.7-.725L16.2 9.225z"
+          />
+        </svg>
+        <div class="descr_opcs">
+          <h2>Escrever uma resenha</h2>
+          <p>Compartilhe sua opinião.</p>
+        </div>
+      </button>
+      <button class="otr_opc_escolher">
+        <svg
+          style="color: rgb(255, 75, 75)"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+          <path
+            fill="currentColor"
+            d="m12 21l-1.45-1.3q-2.525-2.275-4.175-3.925T3.75 12.812T2.388 10.4T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.3 0 2.475.55T12 4.75q.85-1 2.025-1.55t2.475-.55q2.35 0 3.925 1.575T22 8.15q0 1.15-.387 2.25t-1.363 2.412t-2.625 2.963T13.45 19.7z"
+          />
+        </svg>
+        <div class="descr_opcs">
+          <h2>Marcar como favorito</h2>
+          <p>Adicione ao seus favoritos.</p>
+        </div>
+      </button>
+      <button class="otr_opc_escolher">
+        <svg
+          style="color: white"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+          <path
+            fill="currentColor"
+            d="M9 19v-2h12v2zm0-6v-2h12v2zm0-6V5h12v2zM5 20q-.825 0-1.412-.587T3 18t.588-1.412T5 16t1.413.588T7 18t-.587 1.413T5 20m0-6q-.825 0-1.412-.587T3 12t.588-1.412T5 10t1.413.588T7 12t-.587 1.413T5 14m0-6q-.825 0-1.412-.587T3 6t.588-1.412T5 4t1.413.588T7 6t-.587 1.413T5 8"
+          />
+        </svg>
+        <div class="descr_opcs">
+          <h2>Adicionar a uma lista</h2>
+          <p>Organize em listas personalizadas.</p>
+        </div>
+      </button>
     </div>
   </div>
 
